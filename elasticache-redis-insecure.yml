@@ -1,0 +1,23 @@
+policies:
+
+  - name: elasticache-redis-insecure
+    description: Notify when elasticache-redis clusters have insecure configurations
+    resource: cache-cluster
+    filters:
+      - type: value
+        key: "Engine"
+        op: eq
+        value: "redis"
+      - or:
+        - type: value
+          key: "AuthTokenEnabled"
+          op: eq
+          value: false
+        - type: value
+          key: "TransitEncryptionEnabled"
+          op: eq
+          value: false
+        - type: value
+          key: "AtRestEncryptionEnabled"
+          op: eq
+          value: false

@@ -1,0 +1,44 @@
+[
+  {
+    "CacheClusterId": "redis-1",
+    "Engine": "redis",
+    "AuthTokenEnabled": false,
+    "TransitEncryptionEnabled": false,
+    "AtRestEncryptionEnabled": false
+  },
+  {
+    "CacheClusterId": "redis-2",
+    "Engine": "redis",
+    "AuthTokenEnabled": false,
+    "TransitEncryptionEnabled": true,
+    "AtRestEncryptionEnabled": true
+  },
+  {
+    "CacheClusterId": "redis-3",
+    "Engine": "redis",
+    "AuthTokenEnabled": true,
+    "TransitEncryptionEnabled": false,
+    "AtRestEncryptionEnabled": true
+  },
+  {
+    "CacheClusterId": "redis-4",
+    "Engine": "redis",
+    "AuthTokenEnabled": true,
+    "TransitEncryptionEnabled": true,
+    "AtRestEncryptionEnabled": false
+  },
+  {
+    "CacheClusterId": "redis-5",
+    "Engine": "redis",
+    "AuthTokenEnabled": true,
+    "TransitEncryptionEnabled": true,
+    "AtRestEncryptionEnabled": true
+  },
+  {
+    "CacheClusterId": "memcached-1",
+    "Engine": "memcached",
+    "AuthTokenEnabled": false,
+    "TransitEncryptionEnabled": false,
+    "AtRestEncryptionEnabled": false
+  }
+]
